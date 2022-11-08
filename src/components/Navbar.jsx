@@ -16,12 +16,25 @@ flex: 1;
 const Right = styled.div`
 flex: 1;
 `
+const MenuItems = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+`
 
 const Navbar = () => {
     return (
         <Container>
             <Wrapper>
-                <Left>Menu</Left>
+                <Left>
+                    <MenuItems>
+                    <ul>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Promotions</a></li>
+                    </ul>
+                    </MenuItems>
+                </Left>
                 <Center>Search</Center>
                 <Right>Login</Right>
             </Wrapper>
